@@ -1,1 +1,4 @@
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local requestEvent = ReplicatedStorage:WaitForChild("RequestEvent")
 
+requestEvent:FireServer("GetWeapon", "AK47")
